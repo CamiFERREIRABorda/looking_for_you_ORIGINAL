@@ -671,7 +671,7 @@ function Nivel_2 () {
         `, SpriteKind.Food)
     Prima_Nº1.setPosition(15, 0)
     bate.setPosition(142, 69)
-    balon.setPosition(24, 87)
+    balon.setPosition(301, 58)
     PREMIO2.setPosition(175, 762)
     Enemigo2.vy = 60
     Enemigo2.setFlag(SpriteFlag.BounceOnWall, true)
