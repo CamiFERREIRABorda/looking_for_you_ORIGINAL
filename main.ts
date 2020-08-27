@@ -455,14 +455,14 @@ function moveWomanEnemy () {
     if (directionWoman == 1) {
         enemyWoman1.x += -1
         enemyWomanX += -1
-        if (enemyWomanX <= 20) {
+        if (enemyWomanX <= 200) {
             directionWoman = 2
         }
     }
     if (directionWoman == 2) {
         enemyWoman1.x += 1
         enemyWomanX += 1
-        if (enemyWomanX >= 150) {
+        if (enemyWomanX >= 250) {
             directionWoman = 1
         }
     }
@@ -890,9 +890,9 @@ function crearEnemyWoman () {
         . . . . . f f f f f . f f f f f . . . . . . . . . . f f f c c c c f f f f f f f . . . . . . 
         `)
     animation.attachAnimation(enemyWoman1, enemyWomanAnimate)
-    enemyWoman1.x = 150
-    enemyWoman1.y = 100
-    enemyWomanX = 150
+    enemyWoman1.x = 250
+    enemyWoman1.y = 50
+    enemyWomanX = 250
     directionWoman = 1
 }
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
@@ -1854,4 +1854,5 @@ game.onUpdate(function () {
         game.over(false)
         music.wawawawaa.play()
     }
+    moveWomanEnemy()
 })
