@@ -1818,7 +1818,7 @@ animation.attachAnimation(Prima_Nº1, Izquierda)
 animation.attachAnimation(Prima_Nº1, Derecha)
 animation.attachAnimation(Prima_Nº1, Parada)
 scene.cameraFollowSprite(Prima_Nº1)
-Prima_Nº1.ay = 300
+Prima_Nº1.ay = 200
 info.setLife(3)
 Prima_Nº1.setPosition(20, 0)
 music.powerUp.play()
