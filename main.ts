@@ -1823,7 +1823,6 @@ info.setLife(3)
 Prima_Nº1.setPosition(20, 0)
 music.powerUp.play()
 direccion = 1
-Prima_Nº1.setFlag(SpriteFlag.ShowPhysics, true)
 game.onUpdate(function () {
     if (Prima_Nº1.tileKindAt(TileDirection.Bottom, myTiles.tile120) || Prima_Nº1.tileKindAt(TileDirection.Bottom, myTiles.tile121)) {
         info.changeLifeBy(-3)
