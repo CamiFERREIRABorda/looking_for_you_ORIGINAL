@@ -1848,22 +1848,17 @@ music.powerUp.play()
 direccion = 1
 Prima_Nº1.setFlag(SpriteFlag.ShowPhysics, true)
 game.onUpdate(function () {
-    if (Prima_Nº1.tileKindAt(TileDirection.Bottom, myTiles.tile123)) {
+    if (Prima_Nº1.tileKindAt(TileDirection.Bottom, myTiles.tile120) || Prima_Nº1.tileKindAt(TileDirection.Bottom, myTiles.tile121)) {
         info.changeLifeBy(-3)
         game.over(false)
         music.wawawawaa.play()
     }
-    if (Prima_Nº1.tileKindAt(TileDirection.Bottom, myTiles.tile122)) {
+    if (Prima_Nº1.tileKindAt(TileDirection.Bottom, myTiles.tile122) || Prima_Nº1.tileKindAt(TileDirection.Bottom, myTiles.tile123)) {
         info.changeLifeBy(-3)
         game.over(false)
         music.wawawawaa.play()
     }
-    if (Prima_Nº1.tileKindAt(TileDirection.Bottom, myTiles.tile121)) {
-        info.changeLifeBy(-3)
-        game.over(false)
-        music.wawawawaa.play()
-    }
-    if (Prima_Nº1.tileKindAt(TileDirection.Bottom, myTiles.tile124)) {
+    if (Prima_Nº1.tileKindAt(TileDirection.Bottom, myTiles.tile124) || Prima_Nº1.tileKindAt(TileDirection.Bottom, myTiles.tile125)) {
         info.changeLifeBy(-3)
         game.over(false)
         music.wawawawaa.play()
